@@ -43,6 +43,7 @@ elif ques == "topic":
     data = response.json()
     result_list = data["results"]
 
+    # If there are no jokes on the specified topic
     total_jokes = len(result_list)
     if total_jokes == 0:
         print("We don't have jokes on that topic, Sorry!")
