@@ -6,6 +6,8 @@ This is a simple Python script that allows you to fetch and display dad jokes in
 
 - Python 3.x
 - Requests library (You can install it using `pip install requests`)
+- Pyfiglet library (You can install it using `pip install pyfiglet`)
+- Rich library (You can install it using `pip install rich`)
 
 ## Usage
 
