@@ -1,8 +1,14 @@
 import requests
 import random
+import pyfiglet
+from rich import print
+
 
 # Custom user agent string 
 custom_user_agent = "My Library (https://github.com/PrathamVerma999/dad_jokes)"
+
+title = pyfiglet.figlet_format('DAD JOKE-INATOR', font='slant')
+print(f'[magenta]{title}[/magenta]')
 
 # Ask the user whether they want a random joke or a topic-based joke
 ques = input("Would you like a random joke or would you like to choose a topic? ").strip().lower()
