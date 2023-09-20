@@ -65,14 +65,16 @@ elif ques == "topic":
     while amount > total_jokes:
         amount = get_type(input(f"Oops, that exceeds the amount of jokes we have on {topic}. Please enter a number less than or equal to {total_jokes} or type 'exit' to stay unhappy.\n"))
 
+        if amount == "exit":
+            print("Man, is your name Water? I could've sworn you were just right here in my kettle. Well, you will be mist. Okay, Bye-nary now!")
+            exit()
+        
         # Handle cases where the user doesn't follow instructions
         if type(amount) != int():
             print("YOU REFUSE TO FOLLOW THE GUIDELINES, YOU DESERVE TO STAY DEPRESSED! NO DAD JOKE FOR YOU!")
             exit()
 
-        if amount == "exit":
-            print("Man, is your name Water? I could've sworn you were just right here in my kettle. Well, you will be mist. Okay, Bye-nary now!")
-            exit()
+        
 
     # Shuffle the list of jokes and display the requested number
     shuffled_list = random.sample(result_list, len(result_list))
