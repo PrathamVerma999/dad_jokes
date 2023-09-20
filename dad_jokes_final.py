@@ -1,6 +1,9 @@
 import requests
 import random
 
+# Custom user agent string 
+custom_user_agent = "My Library (https://github.com/PrathamVerma999/dad_jokes)"
+
 # Ask the user whether they want a random joke or a topic-based joke
 ques = input("Would you like a random joke or would you like to choose a topic? ").strip().lower()
 
