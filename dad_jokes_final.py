@@ -48,6 +48,14 @@ elif ques == "topic":
     if total_jokes == 0:
         print("We don't have jokes on that topic, Sorry!")
         exit()
+    
+    if total_jokes == 1:
+        print(f"The topic {topic} only has one joke:\n")
+        joke_dict = result_list[0]
+        print(f"• {joke_dict['joke']}")
+        exit()
+
+        
 
     # Ask the user how many jokes they want on the specified topic
     amount = get_type(input(f"The topic {topic} has {total_jokes} jokes. How many jokes would you like? Type 'exit' to stay unhappy.\n"))
